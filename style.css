@@ -1,0 +1,58 @@
+*{
+  padding: 0;
+  margin: 0;
+  /* background-color: #FFF2D8;  */
+  
+}
+.center {
+     
+    width: 50%;
+    padding-top: 20px;
+  }
+.alig{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+#link{
+  color: forestgreen; font-size: 20px;font-style: italic;
+}
+
+/* p{
+  color: #BCA37F;  font-size: larger;
+} */
+h2{
+  color: black; 
+}
+
+
+#navbar{
+  background-color: black;
+  height: 40px;
+  text-align: center;
+  color: azure;
+  color: black;
+  /* border-color: aliceblue; */
+}
+button{
+  color: yellow;
+  background-color: black;
+}
+#logo{
+  color: yellowgreen;
+  font-size: 25px;
+}
+.link{
+  margin-right: 100px;
+  text-decoration: none;
+  
+}
+a{
+  color: white;
+}
+#copyright{
+  background-color: #FFF2D8;
+  
+}
+
