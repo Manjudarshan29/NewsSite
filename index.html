@@ -4,46 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>News Website</title>
+    <link rel="icon" href="https://th.bing.com/th/id/OIP.gSA9gW740sPe_0AWVHZ2EwHaEA?pid=ImgDet&rs=1" type="image/x-icon">
     <link rel="stylesheet" href="style1.css">
 </head>
 <body>
     <header>
-        <div>
-            <a href="https://www.bing.com/ck/a?!&&p=69692a1d0957e176JmltdHM9MTY5NjExODQwMCZpZ3VpZD0yZWRhOTMwMS0yNWE4LTY5N2MtMTkzNi04MmVlMjQzMzY4NzImaW5zaWQ9NTIwNA&ptn=3&hsh=3&fclid=2eda9301-25a8-697c-1936-82ee24336872&psq=indian+express+website&u=a1aHR0cHM6Ly9pbmRpYW5leHByZXNzLmNvbS8&ntb=1"><img src="https://th.bing.com/th/id/OIP.gSA9gW740sPe_0AWVHZ2EwHaEA?pid=ImgDet&rs=1" alt="Indian Express Logo" class="logo"></a>
-        </div>
-        
         <h1>THE INDIAN EXPRESS</h1>
+        <div id="date-time"></div>
+        
         <nav>
             <ul>
+                <!-- <li><button style="position: relative;">&#9776;</button></li> -->
                 <li><a href="./about.html" target="_blank">About</a></li>
                 <li><a href="#c1">World</a></li>
-                <li><a href="#c2">Politics</a></li>
+                <li><a href="#c2">Karnataka</a></li>
                 <li><a href="#c3">Sports</a></li>
                 <li><a href="#c4">Tech</a></li>
                 <li><a href="#c5">Health</a></li>
             </ul>
         </nav>
+        <div id="search-bar">
+            <input type="text" id="search-input" placeholder="Search...">
+            <button id="search-button">Search</button>
+        </div>
+        
+
     </header>
     <div id="breaking-news">
         <span class="ticker-label">Breaking News:</span>
         <div class="ticker-content">
-            <!-- News headlines will be added here -->
         </div>
     </div>
     
     
     <main>
-        <!-- <div id="101"> SPORTS </div> -->
-        <!-- <div class="box1"></div> -->
-        
         <section class="news-article">
-            <h2 id="c1">Sports</h2>
-            <img src="https://images.indianexpress.com/2023/09/Palak-and-Esha.jpg?w=750" >
-            <a href="https://indianexpress.com/article/sports/asian-games/asian-games-2023-live-updates-day-6-india-medals-tally-8960859/"><h4>Palak, Esha Singh bag gold and silver in 10m AP; gold in men’s 3P team with world record, silver in tennis</h4></a>
+            <h2 id="c1">World</h2>
+            <img src="https://img-s-msn-com.akamaized.net/tenant/amp/entityid/AA1hIzU5.img?w=643&h=362&m=6&x=79&y=114&s=538&d=65&f=webp">
+            <a href="https://www.msn.com/en-in/money/topstories/new-york-fraud-case-trump-in-court-as-trial-probes-financial-statements/ar-AA1hIx9y"><h4>New York fraud case: Trump in court as trial probes financial statements</h4></a>
         </section>
         <section class="news-article">
-            <img src="https://images.indianexpress.com/2023/09/ASHWIN-27.jpg?w=640" alt="R Ashwin">
-            <a href="https://indianexpress.com/article/sports/cricket-world-cup/ravichandran-ashwins-route-map-to-wc-axar-patels-injury-experience-tricks-and-being-an-off-spinner-8960771/"><h4>Ravichandran Ashwin’s route-map to WC: Axar Patel’s injury, experience, tricks, and being an off-spinner</h4></a>
+            <img src="https://img-s-msn-com.akamaized.net/tenant/amp/entityid/AA1hIv7L.img?w=612&h=344&m=6&f=webp">
+            <a href="https://www.msn.com/en-in/news/world/north-korea-halts-nuclear-reactor-likely-to-extract-bomb-fuel-report/ar-AA1hIxoM"><h4>North Korea halts nuclear reactor, likely to extract bomb fuel: Report</h4></a>
         </section>
         <section class="news-article">
             <h2 id="c2">Karnataka</h2>
@@ -51,33 +53,37 @@
             <a href="https://indianexpress.com/article/cities/bangalore/bengaluru-news-live-updates-karnataka-bandh-cauvery-row-water-metro-traffic-weather-tamil-nadu-8959433/"><h4>Karnataka Bandh News Updates: 44 flights stand cancelled today; Bengaluru police detain pro-Kannada organisation leader Vatal Nagraj</h4></a>
             
         </section>
+        
         <section class="news-article">
-            <h2 id="c4">Tech</h2>
+            <h2 id="c3">Sports</h2>
+            <img src="https://images.indianexpress.com/2023/09/Palak-and-Esha.jpg?w=750" >
+            <a href="https://indianexpress.com/article/sports/asian-games/asian-games-2023-live-updates-day-6-india-medals-tally-8960859/"><h4>Palak, Esha Singh bag gold and silver in 10m AP; gold in men’s 3P team with world record, silver in tennis</h4></a>
+        </section>
+        <section class="news-article">
+            <img src="https://images.indianexpress.com/2023/09/ASHWIN-27.jpg?w=640" alt="R Ashwin">
+            <a href="https://indianexpress.com/article/sports/cricket-world-cup/ravichandran-ashwins-route-map-to-wc-axar-patels-injury-experience-tricks-and-being-an-off-spinner-8960771/"><h4>Ravichandran Ashwin’s route-map to WC: Axar Patel’s injury, experience, tricks, and being an off-spinner</h4></a>
+        </section>
+        
+        <section class="news-article">
+            <h2 id="c5">Tech</h2>
             <img src="https://images.indianexpress.com/2023/09/Asteroid-psyche-20230928.jpg?w=640">
             <a href="https://indianexpress.com/article/technology/science/spacex-nasa-asteroid-psyche-mission-launch-8960566/"><h4>SpaceX set to launch NASA mission to asteroid Psyche in a week</h4></a>
         </section>
 
-        <section class="news-article">
-            <h2 id="c5">Health</h2>
-            <img src="https://static.toiimg.com/thumb/104039008.cms?width=680&height=512&imgsize=44594" >
-            <a href="https://timesofindia.indiatimes.com/life-style/health-fitness/health-news/having-chest-pain-these-reasons-could-be-triggering-it/photostory/104038980.cms"><h4>Having chest pain? These reasons could be triggering it</h4</a>
-
-        </section>
-
     </main>
+   
     <footer>
-        <p>Contact Us</p>
-        <a href="https://www.facebook.com/indianexpress" title="Facebook" target="_blank" rel="noopener">
-            <img id="facebook" loading="lazy" src="https://indianexpress.com/wp-content/themes/indianexpress/images/icons/icon-facebook.svg" width="32" height="32" alt="Facebook">
-        </a>
-        <a href="https://twitter.com/indianexpress" title="Twitter" target="_blank" rel="noopener">
-            <img id="twitter" loading="lazy" src="https://indianexpress.com/wp-content/themes/indianexpress/images/icons/icon-twitter.svg" width="32" height="32" alt="Twitter">
-        </a>
-        <a href="https://www.instagram.com/indianexpress/" title="Instagram" target="_blank" rel="noopener">
-            <img id="instagram" loading="lazy" src="https://indianexpress.com/wp-content/themes/indianexpress/images/icons/icon-instagram.svg" width="32" height="32" alt="Instagram">
-        </a>
-        <p style="text-align: center;">&copy; 2023 Indian Express</p>
+            <div class="contact-details">
+                <h2 style="text-decoration: none;">Contact Us</h2>
+                <p>Email: contact@indianexpress.com</p>
+                <p>Phone: 08198-229121</p>
+                <p>Address: 123 Inian Express, Bengaluru, India</p>
+                <hr>
+                <p style="text-align: center;">&copy; 2023 Indian Express</p>
+            </div>
+           
     </footer>
+    
     <script src="index.js"></script>
 </body>
 </html>
