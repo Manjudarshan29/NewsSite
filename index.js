@@ -36,36 +36,67 @@ searchInput.addEventListener("keyup", function (event) {
     }
 });
 
+// Define an array of news headlines
 const newsHeadlines = [
-    "India-Canada Tussle: New Delhi May Revoke OCI Status of 'Troublemakers', Say Govt Sources",
-    "Parul Chaudhary, Annu Rani clinch gold in women's 5000m and javelin throw",
-    "Magnitude 6.2 Earthquake Hits Nepal, Strong Tremors Felt in Delhi-NCR",
+    "7 dead, over 40 injured in massive building fire in Mumbai's Goregaon West",
+    "Devon Conway, Rachin Ravindra fire dazzling tons as New Zealand stun defending champions England in opener",
+    "RBI keeps repo rate unchanged at 6.5%",
 ];
 
 const tickerContent = document.querySelector(".ticker-content");
 function updateTicker() {
-    tickerContent.innerHTML = newsHeadlines.join(" | "); 
+    tickerContent.innerHTML = newsHeadlines.join(" | "); // Separate headlines with a pipe (|) symbol
 }
-
 updateTicker();
-setInterval(updateTicker, 10000); 
+setInterval(updateTicker, 10000); // 10000 milliseconds = 10 seconds
 
-const contactForm = document.getElementById('contact-form');
 
-contactForm.addEventListener('submit', function(event) {
-    event.preventDefault();
+const slider = document.querySelector(".slider");
+const prevButton = document.querySelector(".prev-button");
+const nextButton = document.querySelector(".next-button");
 
-    const name = document.getElementById('name').value;
-    const email = document.getElementById('email').value;
-    const message = document.getElementById('message').value;
+let slideIndex = 0;
 
-    if (name.trim() === '' || email.trim() === '' || message.trim() === '') {
-        alert('Please fill in all fields.');
-        return;
+function showSlide(index) {
+    if (index < 0) {
+        slideIndex = slider.children.length - 1;
+    } else if (index >= slider.children.length) {
+        slideIndex = 0;
     }
 
-    // You can send the form data to a server or perform other actions here
-    alert('Message sent successfully!');
-    contactForm.reset();
+    slider.style.transform = `translateX(-${slideIndex * 100}%)`;
+}
+
+prevButton.addEventListener("click", () => {
+    slideIndex--;
+    showSlide(slideIndex);
 });
+
+nextButton.addEventListener("click", () => {
+    slideIndex++;
+    showSlide(slideIndex);
+});
+
+// Automatically advance the slider
+function autoSlide() {
+    slideIndex++;
+    showSlide(slideIndex);
+}
+
+// Change the time interval (in milliseconds) for automatic sliding
+const slideInterval = setInterval(autoSlide, 4000);
+
+// Pause automatic sliding on hover
+slider.addEventListener("mouseenter", () => {
+    clearInterval(slideInterval);
+});
+
+// Resume automatic sliding on mouse leave
+slider.addEventListener("mouseleave", () => {
+    slideInterval = setInterval(autoSlide, 4000);
+});
+
+// Show the initial slide
+showSlide(slideIndex);
+
 
